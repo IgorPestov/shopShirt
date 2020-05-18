@@ -1,0 +1,15 @@
+.search-sorting{
+    margin-top: 100px
+}
+.container{
+    margin: 0 100px 0 100px;
+
+}
+.search-sorting {
+    display: grid;
+    grid-template-areas:
+            "search sorting ";
+    /*grid-template-rows: 40px;*/
+    grid-template-columns: 9fr 3fr ;
+
+}
