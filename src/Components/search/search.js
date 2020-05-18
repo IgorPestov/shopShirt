@@ -7,10 +7,11 @@ import sirvice from "../service";
 export default class Search extends Component {
 
     render() {
-        const {product}= this.props.product;
+        const { length }= this.props;
+
         return(
             <div className='search-item'>
-                <span> {product.length} product(s) found.</span>
+                <span> {length} product(s) found.</span>
             </div>
         )
 
