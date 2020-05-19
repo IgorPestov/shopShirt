@@ -3,14 +3,13 @@ import '../../store'
 
 import './app.css'
 
-import Size from '../size'
-import Sorting from "../sorting";
-import Search from "../search";
-import Shirt from "../shirt";
+import App from '../app'
 import service from "../service";
 
 
-export default class App extends Component {
+
+
+export default class Wrapper extends Component {
     api = new service();
     state = {
         products: [],
@@ -97,20 +96,9 @@ export default class App extends Component {
     render() {
         const {productsIds, products} = this.state;
         return (
-            <div className="container">
+          <App
 
-                <Size
-                      setFilters={this.setFilters}
-                />
-                <div className='search-sorting'>
-                    <Search length={productsIds.length}/>
-                    <Sorting
-                        setSortedData={this.setSortedData}
-                    />
-                </div>
-                {products.length ? <Shirt products={productsIds} getProductById={this.getProductById}/> : 'jhbjhh'}
-            </div>
-
+          />
         )
     }
     ;

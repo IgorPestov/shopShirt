@@ -1,2 +1,2 @@
-import service from "./sirvice";
+import service from "./service";
 export default service;

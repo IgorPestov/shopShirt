@@ -3,24 +3,23 @@ import React, {Component} from "react";
 import './sorting.css'
 
 
-export default class Sorting extends Component{
-      state = {
-          sorting : 0
-      };
+export default class Sorting extends Component {
+
     onChange = (e) => {
 
-       this.props.getSortedData(e.target.value);
-    };
+        this.props.setSortedData(e.target.value)
 
+    };
 
 
     render() {
 
-        return(
+        return (
 
             <div className='sorting-item'>
                 <span>Order by : </span>
-                <select onChange={this.onChange} >
+                <select onChange={this.onChange}
+                        className='select-sorting'>
                     <option value='0'> Select</option>
                     <option value='1'> Lowest to highest</option>
                     <option value='2'> Highest to lowest</option>

@@ -1,4 +1,3 @@
-
 export default class service {
     _apiBase = 'https://simplereactshop.herokuapp.com/api/products';
 
@@ -12,7 +11,6 @@ export default class service {
         const res = await this.getResource();
         return res;
     }
-
 
 
 }

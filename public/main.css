@@ -1,15 +1,18 @@
 .search-sorting{
-    margin-top: 100px
+    margin-top: 150px
 }
 .container{
-    margin: 0 100px 0 100px;
+    margin: 0 20% 0 20%;
+    font-family: Arial;
 
 }
 .search-sorting {
     display: grid;
     grid-template-areas:
             "search sorting ";
-    /*grid-template-rows: 40px;*/
-    grid-template-columns: 9fr 3fr ;
+    /*grid-template-columns: 9fr 3fr ;*/
 
+}
+.checkbox {
+    display: none;
 }

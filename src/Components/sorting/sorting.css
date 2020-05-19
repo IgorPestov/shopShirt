@@ -1,4 +1,10 @@
 .sorting-item{
     grid-area: sorting;
+    text-align: right;
 
+}
+.select-sorting {
+    height: 25px;
+    width: 140px;
+    background: white;
 }
