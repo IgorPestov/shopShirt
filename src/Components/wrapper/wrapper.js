@@ -1,12 +1,8 @@
 import React, {Component} from 'react';
 import '../../store'
 
-import './app.css'
-
 import App from '../app'
 import service from "../service";
-
-
 
 
 export default class Wrapper extends Component {
@@ -96,9 +92,18 @@ export default class Wrapper extends Component {
     render() {
         const {productsIds, products} = this.state;
         return (
-          <App
+            <App
+                productsIds={productsIds}
 
-          />
+                products={products}
+
+                getProductById={this.getProductById}
+
+                setSortedData={this.setSortedData}
+
+                setFilters={this.setFilters}
+
+            />
         )
     }
     ;
